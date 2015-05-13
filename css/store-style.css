@@ -1,0 +1,276 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0.0 Navigation
+0.0 Info Tab
+0.0 Locations Tab
+0.0 User Experience Tab
+0.0 General Settings Tab
+0.0 Reports Tab
+--------------------------------------------------------------*/
+/* line 15, ../scss/store-style.scss */
+h1.subtitle {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+	0.0 Navigation
+--------------------------------------------------------------*/
+/* Sub Nav */
+/* line 24, ../scss/store-style.scss */
+#wpcsl-nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
+}
+/* line 28, ../scss/store-style.scss */
+#wpcsl-nav li a {
+  background: whitesmoke;
+  border: 1px solid #cccccc;
+  color: black;
+  padding: 0.25em 1em;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 35, ../scss/store-style.scss */
+#wpcsl-nav li a:hover {
+  background: white;
+  border: 1px solid #dddddd;
+}
+/* line 40, ../scss/store-style.scss */
+#wpcsl-nav li.current a {
+  background: white;
+  border: 1px solid #dddddd;
+}
+
+/*--------------------------------------------------------------
+	0.0 Info Tab
+--------------------------------------------------------------*/
+/* line 49, ../scss/store-style.scss */
+#wpcsl-option-how_to_use .section_description, #wpcsl-option-plugin_news .section_description, #wpcsl-option-plugin_environment .section_description {
+  background-color: white;
+  padding: 2em 3em;
+  border: 1px solid #dddddd;
+}
+/* line 53, ../scss/store-style.scss */
+#wpcsl-option-how_to_use .section_description h4, #wpcsl-option-plugin_news .section_description h4, #wpcsl-option-plugin_environment .section_description h4 {
+  font-size: 1.5em;
+}
+/* line 56, ../scss/store-style.scss */
+#wpcsl-option-how_to_use .section_description p, #wpcsl-option-plugin_news .section_description p, #wpcsl-option-plugin_environment .section_description p {
+  padding-left: 0 !important;
+  line-height: 2.1;
+}
+/* line 60, ../scss/store-style.scss */
+#wpcsl-option-how_to_use .section_description a, #wpcsl-option-plugin_news .section_description a, #wpcsl-option-plugin_environment .section_description a {
+  background-color: whitesmoke;
+  border: 1px solid #eeeeee;
+  padding: 0 0.75em;
+  text-decoration: none;
+}
+
+/* line 69, ../scss/store-style.scss */
+.csa-top-module p, .csa-top-module div {
+  padding-left: 0 !important;
+}
+
+/* line 75, ../scss/store-style.scss */
+.csa-module-container .csa-module {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  box-shadow: none;
+  float: left;
+  margin: 0 0 15px 15px;
+  min-height: 300px;
+  padding: 15px 0 35px 15px;
+  position: relative;
+  transition-duration: 0.4s;
+  width: 210px;
+}
+/* line 87, ../scss/store-style.scss */
+.csa-module-container .csa-module p {
+  color: #666;
+  font-family: "Open Sans",sans-serif;
+  line-height: 1.2em;
+  margin-bottom: 1.2em;
+  padding-right: 1em;
+}
+/* line 94, ../scss/store-style.scss */
+.csa-module-container .csa-module .csa-module-actions a.button-secondary {
+  background-color: #f7f7f7 !important;
+  box-shadow: 0 1px 0 white inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+  color: #555;
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+}
+/* line 100, ../scss/store-style.scss */
+.csa-module-container .csa-module .csa-module-actions a.button-secondary:hover {
+  color: black;
+  border: 1px solid #999999 !important;
+}
+/* line 105, ../scss/store-style.scss */
+.csa-module-container .csa-module .csa-module-meta {
+  float: right;
+}
+/* line 108, ../scss/store-style.scss */
+.csa-module-container .csa-module.outdated {
+  background-color: #fffdda;
+}
+/* line 111, ../scss/store-style.scss */
+.csa-module-container .csa-module.active {
+  background-color: #f0ffee;
+}
+/* line 114, ../scss/store-style.scss */
+.csa-module-container .csa-module.active-info {
+  background-color: #f8f8f8;
+}
+
+/* line 120, ../scss/store-style.scss */
+#wpcsl-option-plugin_environment {
+  font-family: Menlo,Monaco,monospace;
+  white-space: pre;
+  overflow: auto;
+  display: block;
+}
+/* line 125, ../scss/store-style.scss */
+#wpcsl-option-plugin_environment .section_description {
+  width: 600px;
+}
+/* line 129, ../scss/store-style.scss */
+#wpcsl-option-plugin_environment p.envinfo a {
+  margin-left: 1em;
+}
+/* line 132, ../scss/store-style.scss */
+#wpcsl-option-plugin_environment p.envinfo span.label {
+  margin-right: 0.5em;
+}
+
+/*--------------------------------------------------------------
+	0.0 Locations Tab
+--------------------------------------------------------------*/
+/* line 140, ../scss/store-style.scss */
+#wpbody-content div#wpcsl_container div#wpcsl-nav ul li.current a {
+  color: black !important;
+}
+
+/* line 144, ../scss/store-style.scss */
+#wpcsl-option-current_locations .tablenav {
+  background-color: white;
+  padding: 2em;
+  *zoom: 1;
+  height: 100%;
+}
+/* line 42, ../scss/mixins/_mixins-master.scss */
+#wpcsl-option-current_locations .tablenav:before, #wpcsl-option-current_locations .tablenav:after {
+  content: " ";
+  display: table;
+}
+/* line 48, ../scss/mixins/_mixins-master.scss */
+#wpcsl-option-current_locations .tablenav:after {
+  clear: both;
+}
+/* line 149, ../scss/store-style.scss */
+#wpcsl-option-current_locations .tablenav #extra_add_tag {
+  float: left;
+}
+/* line 152, ../scss/store-style.scss */
+#wpcsl-option-current_locations .tablenav #extra_add_tag, #wpcsl-option-current_locations .tablenav #extra_filter_by_property {
+  display: none;
+}
+/* line 155, ../scss/store-style.scss */
+#wpcsl-option-current_locations .tablenav #slp_pagination_pages {
+  clear: both;
+}
+
+/* line 161, ../scss/store-style.scss */
+#manage_locations_table .sorting-indicator {
+  margin-top: 0;
+}
+/* line 163, ../scss/store-style.scss */
+#manage_locations_table .sorting-indicator::before {
+  left: 35px;
+  top: -5px;
+}
+
+/* line 173, ../scss/store-style.scss */
+table.slplus.widefat thead th {
+  line-height: 0;
+}
+/* line 175, ../scss/store-style.scss */
+table.slplus.widefat thead th#top_of_checkbox_column {
+  padding-left: 1.25em;
+}
+/* line 182, ../scss/store-style.scss */
+table.slplus.widefat .action_buttons a.edit_icon, table.slplus.widefat .action_buttons a.delete_icon {
+  position: relative;
+}
+/* line 185, ../scss/store-style.scss */
+table.slplus.widefat .action_buttons a.edit_icon:before {
+  position: absolute;
+  font-family: fontello;
+  top: 0;
+  left: 0;
+  content: "\e800";
+}
+/* line 192, ../scss/store-style.scss */
+table.slplus.widefat .action_buttons a.delete_icon:before {
+  position: absolute;
+  font-family: fontello;
+  top: 0;
+  left: 30px;
+  content: "\e801";
+}
+/* line 201, ../scss/store-style.scss */
+table.slplus.widefat th.address a {
+  display: inline-block;
+}
+/* line 205, ../scss/store-style.scss */
+table.slplus.widefat tr.slp_managelocations_row span.location_details_field {
+  display: block;
+}
+/* line 207, ../scss/store-style.scss */
+table.slplus.widefat tr.slp_managelocations_row span.location_details_field .label.textblock, table.slplus.widefat tr.slp_managelocations_row span.location_details_field .label.text, table.slplus.widefat tr.slp_managelocations_row span.location_details_field .label.boolean {
+  color: #666;
+  font-weight: 600;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+}
+/* line 213, ../scss/store-style.scss */
+table.slplus.widefat tr.slp_managelocations_row span.location_details_field .content {
+  color: #999;
+}
+/* line 217, ../scss/store-style.scss */
+table.slplus.widefat tr.slp_managelocations_row.collapsed {
+  display: none;
+}
+/* line 219, ../scss/store-style.scss */
+table.slplus.widefat tr.slp_managelocations_row.collapsed td {
+  border-top: 1px solid #eeeeee;
+}
+/* line 223, ../scss/store-style.scss */
+table.slplus.widefat tr.slp_managelocations_row td {
+  padding: 2em 0;
+}
+/* line 228, ../scss/store-style.scss */
+table.slplus.widefat span.store_name {
+  font-size: 14px;
+}
+/* line 232, ../scss/store-style.scss */
+table.slplus.widefat td .store_latlong {
+  display: block;
+  font-size: 12px;
+  padding: 1em 0;
+}
+
+/*--------------------------------------------------------------
+	0.0 User Experience Tab
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	0.0 General Settings Tab
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	0.0 Reports Tab
+--------------------------------------------------------------*/

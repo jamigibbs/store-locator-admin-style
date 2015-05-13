@@ -1,0 +1,250 @@
+@import "settings";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0.0 Navigation
+0.0 Info Tab
+0.0 Locations Tab
+0.0 User Experience Tab
+0.0 General Settings Tab
+0.0 Reports Tab
+--------------------------------------------------------------*/
+
+h1.subtitle {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+	0.0 Navigation
+--------------------------------------------------------------*/
+
+/* Sub Nav */
+#wpcsl-nav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+	a {
+		background: $white-smoke;
+		border: 1px solid $iron;
+	    color: black;
+	    padding: 0.25em 1em;
+	    text-decoration: none;
+	    @include border-radius(3px);
+	    &:hover {
+	    	background: $white;
+	   		border: 1px solid $gainsboro;
+	    }
+	}
+	&.current a {
+	    background: $white;
+	    border: 1px solid $gainsboro;
+	}
+}
+
+/*--------------------------------------------------------------
+	0.0 Info Tab
+--------------------------------------------------------------*/
+#wpcsl-option-how_to_use .section_description, #wpcsl-option-plugin_news .section_description, #wpcsl-option-plugin_environment .section_description {
+	background-color: $white;
+	padding: 2em 3em;
+	border: 1px solid #dddddd;
+	h4 {
+		font-size: 1.5em;
+	}
+	p {
+		padding-left: 0!important;
+		line-height: 2.1;
+	}
+	a {
+	    background-color: $white-smoke;
+	    border: 1px solid $smoke;
+	    padding: 0 0.75em;
+	    text-decoration: none;
+	}
+}
+
+.csa-top-module {
+	p, div {
+	    padding-left: 0!important;
+	}
+}
+
+.csa-module-container {
+	.csa-module {
+	    background: none repeat scroll 0 0 #fff;
+	    border: 1px solid #dedede;
+	    border-radius: 3px;
+	    box-shadow: none;
+	    float: left;
+	    margin: 0 0 15px 15px;
+	    min-height: 300px;
+	    padding: 15px 0 35px 15px;
+	    position: relative;
+	    transition-duration: 0.4s;
+	    width: 210px;
+		p {
+		    color: #666;
+		    font-family: "Open Sans",sans-serif;
+		    line-height: 1.2em;
+		    margin-bottom: 1.2em;
+		    padding-right: 1em;
+		}
+		.csa-module-actions a.button-secondary {
+		    background-color: #f7f7f7 !important;
+		    box-shadow: 0 1px 0 white inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+		    color: #555;
+		    font-family: "Open Sans",sans-serif;
+		    font-weight: normal;
+		    &:hover {
+		    	color: black;
+		    	border: 1px solid #999999!important;
+		    }
+		}
+		.csa-module-meta {
+			float: right;
+		}
+		&.outdated {
+			background-color: #fffdda;
+		}
+		&.active {
+			background-color: #f0ffee;
+		}
+		&.active-info {
+			background-color: #f8f8f8;
+		}
+	}
+}
+
+#wpcsl-option-plugin_environment {
+	font-family: Menlo,Monaco,monospace;
+	white-space: pre;
+	overflow: auto;
+	display: block;
+	.section_description {
+		width: 600px;
+	}
+	p.envinfo {
+		a {
+			margin-left: 1em;
+		}
+		span.label {
+			margin-right: 0.5em;
+		}
+	}
+}
+/*--------------------------------------------------------------
+	0.0 Locations Tab
+--------------------------------------------------------------*/
+#wpbody-content div#wpcsl_container div#wpcsl-nav ul li.current a {
+    color: black !important;
+}
+
+#wpcsl-option-current_locations .tablenav {
+	background-color: $white;
+	padding: 2em;
+	@include clearfix;
+	height: 100%;
+	#extra_add_tag {
+		float: left;
+	}
+	#extra_add_tag, #extra_filter_by_property {
+		display: none;
+	}
+	#slp_pagination_pages {
+		clear: both;
+	}
+}
+
+#manage_locations_table {
+	.sorting-indicator {
+		margin-top: 0;
+		&::before {
+			left: 35px;
+			top: -5px;
+		}
+	}
+}
+
+table.slplus.widefat {
+
+	thead {
+		th {
+			line-height: 0;
+			&#top_of_checkbox_column {
+				padding-left: 1.25em;
+			}
+		}
+	}
+
+	.action_buttons {
+		a.edit_icon, a.delete_icon {
+			position: relative;
+		}
+		a.edit_icon:before {
+	        position: absolute;
+	        font-family: fontello;
+	        top: 0;
+	        left: 0;
+	        content: "\e800";
+		}
+		a.delete_icon:before {
+	        position: absolute;
+	        font-family: fontello;
+	        top: 0;
+	        left: 30px;
+	        content: "\e801";
+		}
+	}
+
+	th.address a {
+		display: inline-block;
+	}
+	tr.slp_managelocations_row {
+		span.location_details_field {
+			display: block;
+			.label.textblock, .label.text, .label.boolean {
+			    color: #666;
+			    font-weight: 600;
+			    margin-right: 0.5em;
+			    text-transform: uppercase;
+			}
+			.content {
+				color: #999;
+			}
+		}
+		&.collapsed {
+			display: none;
+			td {
+				border-top: 1px solid #eeeeee;
+			}
+		}
+		td {
+			padding: 2em 0;
+		}
+	}
+
+	span.store_name {
+		font-size: 14px;
+	}
+	
+	td .store_latlong {
+	    display: block;
+	    font-size: 12px;
+	    padding: 1em 0;
+	}
+
+}
+
+/*--------------------------------------------------------------
+	0.0 User Experience Tab
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	0.0 General Settings Tab
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	0.0 Reports Tab
+--------------------------------------------------------------*/
